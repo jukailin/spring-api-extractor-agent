@@ -1,0 +1,1846 @@
+{
+  "timestamp": "Wed Mar 12 10:14:02 CST 2025",
+  "scannedJars": 3,
+  "controllers": 29,
+  "apiCount": 163,
+  "apis": [
+    {
+      "path": "/api/login",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "query",
+        "param1": "query"
+      },
+      "source": {
+        "class": "BOOT-INF.classes.org.javaweb.vuln.controller.LoginController",
+        "method": "login"
+      }
+    },
+    {
+      "path": "/api/test",
+      "methods": ["GET"],
+      "parameters": {
+      },
+      "source": {
+        "class": "BOOT-INF.classes.org.javaweb.vuln.controller.LoginController",
+        "method": "test"
+      }
+    },
+    {
+      "path": "/api/login",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "query",
+        "param1": "query"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.LoginController",
+        "method": "login"
+      }
+    },
+    {
+      "path": "/api/test",
+      "methods": ["GET"],
+      "parameters": {
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.LoginController",
+        "method": "test"
+      }
+    },
+    {
+      "path": "${server.error.path:${error.path:/error}}",
+      "methods": ["GET"],
+      "parameters": {
+        "param0": "HttpServletRequest",
+        "param1": "HttpServletResponse"
+      },
+      "source": {
+        "class": "org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController",
+        "method": "errorHtml"
+      }
+    },
+    {
+      "path": "${server.error.path:${error.path:/error}}",
+      "methods": ["GET"],
+      "parameters": {
+        "param0": "HttpServletRequest"
+      },
+      "source": {
+        "class": "org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController",
+        "method": "error"
+      }
+    },
+    {
+      "path": "/Blacklist/blacklist.do",
+      "methods": ["GET"],
+      "parameters": {
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.BlacklistController",
+        "method": "blacklist"
+      }
+    },
+    {
+      "path": "/Blacklist/url.do",
+      "methods": ["GET"],
+      "parameters": {
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.BlacklistController",
+        "method": "url"
+      }
+    },
+    {
+      "path": "/CMD/get/cmd.do",
+      "methods": ["GET"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.CMDController",
+        "method": "getProcessBuilder"
+      }
+    },
+    {
+      "path": "/CMD/post/cmd.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.CMDController",
+        "method": "postProcessBuilder"
+      }
+    },
+    {
+      "path": "/CMD/cookie/cmd.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.CMDController",
+        "method": "cookieProcessBuilder"
+      }
+    },
+    {
+      "path": "/CMD/header/cmd.do",
+      "methods": ["POST"],
+      "parameters": {
+        "cmd": "header",
+        "param0": "header"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.CMDController",
+        "method": "headerProcessBuilder"
+      }
+    },
+    {
+      "path": "/CMD/xml/cmd.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.CMDController",
+        "method": "xmlProcessBuilder"
+      }
+    },
+    {
+      "path": "/CMD/json/cmd.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.CMDController",
+        "method": "jsonProcessBuilder"
+      }
+    },
+    {
+      "path": "/CMD/form/cmd.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "MultipartFile"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.CMDController",
+        "method": "multipartProcessBuilder"
+      }
+    },
+    {
+      "path": "/CMD/get/unixProcess.do",
+      "methods": ["GET"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.CMDController",
+        "method": "getUnixProcess"
+      }
+    },
+    {
+      "path": "/CMD/post/unixProcess.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.CMDController",
+        "method": "postUnixProcess"
+      }
+    },
+    {
+      "path": "/CMD/cookie/unixProcess.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.CMDController",
+        "method": "cookieUnixProcess"
+      }
+    },
+    {
+      "path": "/CMD/header/unixProcess.do",
+      "methods": ["POST"],
+      "parameters": {
+        "cmd": "header",
+        "param0": "header"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.CMDController",
+        "method": "headerUnixProcess"
+      }
+    },
+    {
+      "path": "/CMD/xml/unixProcess.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.CMDController",
+        "method": "xmlUnixProcess"
+      }
+    },
+    {
+      "path": "/CMD/json/unixProcess.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.CMDController",
+        "method": "jsonUnixProcess"
+      }
+    },
+    {
+      "path": "/CMD/form/unixProcess.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "MultipartFile"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.CMDController",
+        "method": "multipartUnixProcess"
+      }
+    },
+    {
+      "path": "/Deserialization/readObject.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.DeserializationController",
+        "method": "readObject"
+      }
+    },
+    {
+      "path": "/Deserialization/readObject.do",
+      "methods": ["GET"],
+      "parameters": {
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.DeserializationController",
+        "method": "readObject"
+      }
+    },
+    {
+      "path": "/DisableMethod/log4j.do",
+      "methods": ["GET"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.DisableMethodController",
+        "method": "log4j"
+      }
+    },
+    {
+      "path": "/Expression/ongl.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.ExpressionController",
+        "method": "ognl"
+      }
+    },
+    {
+      "path": "/Expression/spEL.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.ExpressionController",
+        "method": "spel"
+      }
+    },
+    {
+      "path": "/Expression/mvel.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.ExpressionController",
+        "method": "mvel"
+      }
+    },
+    {
+      "path": "/FastJson/fastJsonParseObject.do",
+      "methods": ["GET"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FastJsonController",
+        "method": "fastJsonParseObject"
+      }
+    },
+    {
+      "path": "/FileSystem/get/fileInputStreamReadFile.do",
+      "methods": ["GET"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "getFileInputStreamReadFile"
+      }
+    },
+    {
+      "path": "/FileSystem/post/fileInputStreamReadFile.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "postFileInputStreamReadFile"
+      }
+    },
+    {
+      "path": "/FileSystem/cookie/fileInputStreamReadFile.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "cookieFileInputStreamReadFile"
+      }
+    },
+    {
+      "path": "/FileSystem/header/fileInputStreamReadFile.do",
+      "methods": ["POST"],
+      "parameters": {
+        "file": "header",
+        "param0": "header"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "headerFileInputStreamReadFile"
+      }
+    },
+    {
+      "path": "/FileSystem/xml/fileInputStreamReadFile.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "xmlFileInputStreamReadFile"
+      }
+    },
+    {
+      "path": "/FileSystem/json/fileInputStreamReadFile.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "jsonFileInputStreamReadFile"
+      }
+    },
+    {
+      "path": "/FileSystem/form/fileInputStreamReadFile.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "MultipartFile"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "multipartFileInputStreamReadFile"
+      }
+    },
+    {
+      "path": "/FileSystem/get/randomAccessFileReadFile.do",
+      "methods": ["GET"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "getRandomAccessFileReadFile"
+      }
+    },
+    {
+      "path": "/FileSystem/post/randomAccessFileReadFile.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "postRandomAccessFileReadFile"
+      }
+    },
+    {
+      "path": "/FileSystem/cookie/randomAccessFileReadFile.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "cookieRandomAccessFileReadFile"
+      }
+    },
+    {
+      "path": "/FileSystem/header/randomAccessFileReadFile.do",
+      "methods": ["POST"],
+      "parameters": {
+        "file": "header",
+        "param0": "header"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "headerRandomAccessFileReadFile"
+      }
+    },
+    {
+      "path": "/FileSystem/xml/randomAccessFileReadFile.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "xmlRandomAccessFileReadFile"
+      }
+    },
+    {
+      "path": "/FileSystem/json/randomAccessFileReadFile.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "jsonRandomAccessFileReadFile"
+      }
+    },
+    {
+      "path": "/FileSystem/form/randomAccessFileReadFile.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "MultipartFile"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "multipartRandomAccessFileReadFile"
+      }
+    },
+    {
+      "path": "/FileSystem/get/filesReadAllBytes.do",
+      "methods": ["GET"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "getFilesReadAllBytes"
+      }
+    },
+    {
+      "path": "/FileSystem/post/filesReadAllBytes.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "postFilesReadAllBytes"
+      }
+    },
+    {
+      "path": "/FileSystem/cookie/filesReadAllBytes.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "cookieFilesReadAllBytes"
+      }
+    },
+    {
+      "path": "/FileSystem/header/filesReadAllBytes.do",
+      "methods": ["POST"],
+      "parameters": {
+        "file": "header",
+        "param0": "header"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "headerFilesReadAllBytes"
+      }
+    },
+    {
+      "path": "/FileSystem/xml/filesReadAllBytes.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "xmlFilesReadAllBytes"
+      }
+    },
+    {
+      "path": "/FileSystem/json/filesReadAllBytes.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "jsonFilesReadAllBytes"
+      }
+    },
+    {
+      "path": "/FileSystem/form/filesReadAllBytes.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "MultipartFile"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "multipartFilesReadAllBytes"
+      }
+    },
+    {
+      "path": "/FileSystem/get/fileOutStreamWriteFile.do",
+      "methods": ["GET"],
+      "parameters": {
+        "param0": "String",
+        "param1": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "getFileOutStreamWriteFile"
+      }
+    },
+    {
+      "path": "/FileSystem/post/fileOutStreamWriteFile.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String",
+        "param1": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "postFileOutStreamWriteFile"
+      }
+    },
+    {
+      "path": "/FileSystem/cookie/fileOutStreamWriteFile.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String",
+        "param1": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "cookieFileOutStreamWriteFile"
+      }
+    },
+    {
+      "path": "/FileSystem/header/fileOutStreamWriteFile.do",
+      "methods": ["POST"],
+      "parameters": {
+        "file": "header",
+        "param0": "header",
+        "content": "header",
+        "param1": "header"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "headerFileOutStreamWriteFile"
+      }
+    },
+    {
+      "path": "/FileSystem/xml/fileOutStreamWriteFile.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "xmlFileOutStreamWriteFile"
+      }
+    },
+    {
+      "path": "/FileSystem/json/fileOutStreamWriteFile.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "jsonFileOutStreamWriteFile"
+      }
+    },
+    {
+      "path": "/FileSystem/form/fileOutStreamWriteFile.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "MultipartFile"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "multipartFileOutStreamWriteFile"
+      }
+    },
+    {
+      "path": "/FileSystem/get/randomAccessFileWriteFile.do",
+      "methods": ["GET"],
+      "parameters": {
+        "param0": "String",
+        "param1": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "getRandomAccessFileWriteFile"
+      }
+    },
+    {
+      "path": "/FileSystem/post/randomAccessFileWriteFile.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String",
+        "param1": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "postRandomAccessFileWriteFile"
+      }
+    },
+    {
+      "path": "/FileSystem/cookie/randomAccessFileWriteFile.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String",
+        "param1": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "cookieRandomAccessFileWriteFile"
+      }
+    },
+    {
+      "path": "/FileSystem/header/randomAccessFileWriteFile.do",
+      "methods": ["POST"],
+      "parameters": {
+        "file": "header",
+        "param0": "header",
+        "content": "header",
+        "param1": "header"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "headerRandomAccessFileWriteFile"
+      }
+    },
+    {
+      "path": "/FileSystem/xml/randomAccessFileWriteFile.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "xmlRandomAccessFileWriteFile"
+      }
+    },
+    {
+      "path": "/FileSystem/json/randomAccessFileWriteFile.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "jsonRandomAccessFileWriteFile"
+      }
+    },
+    {
+      "path": "/FileSystem/form/randomAccessFileWriteFile.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "MultipartFile"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "multipartRandomAccessFileWriteFile"
+      }
+    },
+    {
+      "path": "/FileSystem/get/filesWrite.do",
+      "methods": ["GET"],
+      "parameters": {
+        "param0": "String",
+        "param1": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "getfilesWrite"
+      }
+    },
+    {
+      "path": "/FileSystem/post/filesWrite.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String",
+        "param1": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "postfilesWrite"
+      }
+    },
+    {
+      "path": "/FileSystem/cookie/filesWrite.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String",
+        "param1": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "cookiefilesWrite"
+      }
+    },
+    {
+      "path": "/FileSystem/header/filesWrite.do",
+      "methods": ["POST"],
+      "parameters": {
+        "file": "header",
+        "param0": "header",
+        "content": "header",
+        "param1": "header"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "headerfilesWrite"
+      }
+    },
+    {
+      "path": "/FileSystem/xml/filesWrite.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "xmlFilesWrite"
+      }
+    },
+    {
+      "path": "/FileSystem/json/filesWrite.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "jsonFilesWrite"
+      }
+    },
+    {
+      "path": "/FileSystem/form/filesWrite.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "MultipartFile"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "multipartfilesWrite"
+      }
+    },
+    {
+      "path": "/FileSystem/get/deleteFile.do",
+      "methods": ["GET"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "getDeleteFile"
+      }
+    },
+    {
+      "path": "/FileSystem/post/deleteFile.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "postDeleteFile"
+      }
+    },
+    {
+      "path": "/FileSystem/cookie/deleteFile.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "cookieDeleteFile"
+      }
+    },
+    {
+      "path": "/FileSystem/header/deleteFile.do",
+      "methods": ["POST"],
+      "parameters": {
+        "file": "header",
+        "param0": "header"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "headerDeleteFile"
+      }
+    },
+    {
+      "path": "/FileSystem/xml/deleteFile.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "xmlDeleteFile"
+      }
+    },
+    {
+      "path": "/FileSystem/json/deleteFile.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "jsonDeleteFile"
+      }
+    },
+    {
+      "path": "/FileSystem/form/deleteFile.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "MultipartFile"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "multipartDeleteFile"
+      }
+    },
+    {
+      "path": "/FileSystem/get/renameTo.do",
+      "methods": ["GET"],
+      "parameters": {
+        "param0": "String",
+        "param1": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "getRenameTo"
+      }
+    },
+    {
+      "path": "/FileSystem/post/renameTo.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String",
+        "param1": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "postRenameTo"
+      }
+    },
+    {
+      "path": "/FileSystem/cookie/renameTo.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String",
+        "param1": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "cookieRenameTo"
+      }
+    },
+    {
+      "path": "/FileSystem/header/renameTo.do",
+      "methods": ["POST"],
+      "parameters": {
+        "file": "header",
+        "param0": "header",
+        "dest": "header",
+        "param1": "header"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "headerRenameTo"
+      }
+    },
+    {
+      "path": "/FileSystem/xml/renameTo.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "xmlRenameTo"
+      }
+    },
+    {
+      "path": "/FileSystem/json/renameTo.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "jsonRenameTo"
+      }
+    },
+    {
+      "path": "/FileSystem/form/renameTo.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "MultipartFile"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "multipartRenameTo"
+      }
+    },
+    {
+      "path": "/FileSystem/get/filesCopy.do",
+      "methods": ["GET"],
+      "parameters": {
+        "param0": "String",
+        "param1": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "getFilesCopy"
+      }
+    },
+    {
+      "path": "/FileSystem/post/filesCopy.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String",
+        "param1": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "postFilesCopy"
+      }
+    },
+    {
+      "path": "/FileSystem/cookie/filesCopy.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String",
+        "param1": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "cookieFilesCopy"
+      }
+    },
+    {
+      "path": "/FileSystem/header/filesCopy.do",
+      "methods": ["POST"],
+      "parameters": {
+        "file": "header",
+        "param0": "header",
+        "dest": "header",
+        "param1": "header"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "headerFilesCopy"
+      }
+    },
+    {
+      "path": "/FileSystem/xml/filesCopy.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "xmlFilesCopy"
+      }
+    },
+    {
+      "path": "/FileSystem/json/filesCopy.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "jsonFilesCopy"
+      }
+    },
+    {
+      "path": "/FileSystem/form/filesCopy.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "MultipartFile"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "multipartFilesCopy"
+      }
+    },
+    {
+      "path": "/FileSystem/get/listFile.do",
+      "methods": ["GET"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "getListFile"
+      }
+    },
+    {
+      "path": "/FileSystem/post/listFile.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "postListFile"
+      }
+    },
+    {
+      "path": "/FileSystem/cookie/listFile.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "cookieListFile"
+      }
+    },
+    {
+      "path": "/FileSystem/header/listFile.do",
+      "methods": ["POST"],
+      "parameters": {
+        "dir": "header",
+        "param0": "header"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "headerListFile"
+      }
+    },
+    {
+      "path": "/FileSystem/xml/listFile.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "xmlListFile"
+      }
+    },
+    {
+      "path": "/FileSystem/json/listFile.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "jsonListFile"
+      }
+    },
+    {
+      "path": "/FileSystem/form/listFile.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "MultipartFile"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileSystemController",
+        "method": "multipartListFile"
+      }
+    },
+    {
+      "path": "/FileUpload/upload.do",
+      "methods": ["GET"],
+      "parameters": {
+        "file": "query",
+        "param0": "query",
+        "param1": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.FileUploadController",
+        "method": "upload"
+      }
+    },
+    {
+      "path": "/Jackson/readValue.do",
+      "methods": ["GET"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.JacksonController",
+        "method": "jacksonReadValue"
+      }
+    },
+    {
+      "path": "/JNDI/get/lookup.do",
+      "methods": ["GET"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.JNDIController",
+        "method": "getLookup"
+      }
+    },
+    {
+      "path": "/JNDI/post/lookup.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.JNDIController",
+        "method": "postLookup"
+      }
+    },
+    {
+      "path": "/JNDI/cookie/lookup.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.JNDIController",
+        "method": "cookieLookup"
+      }
+    },
+    {
+      "path": "/JNDI/header/lookup.do",
+      "methods": ["POST"],
+      "parameters": {
+        "url": "header",
+        "param0": "header"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.JNDIController",
+        "method": "headerLookup"
+      }
+    },
+    {
+      "path": "/JNDI/json/lookup.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.JNDIController",
+        "method": "jsonLookup"
+      }
+    },
+    {
+      "path": "/JNDI/form/lookup.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "MultipartFile"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.JNDIController",
+        "method": "multipartLookup"
+      }
+    },
+    {
+      "path": "/Patch/readFileTest.do",
+      "methods": ["GET"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.PatchController",
+        "method": "readFileTest"
+      }
+    },
+    {
+      "path": "/Request/proxy.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.RequestController",
+        "method": "xerces"
+      }
+    },
+    {
+      "path": "/ScriptEngine/scriptEngineEval.do",
+      "methods": ["GET"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.ScriptEngineController",
+        "method": "scriptEngineEval"
+      }
+    },
+    {
+      "path": "/Yaml/yaml.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.SnakeyamlController",
+        "method": "snakeYaml"
+      }
+    },
+    {
+      "path": "/SQL/get/sql.do",
+      "methods": ["GET"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.SQLInjectionController",
+        "method": "getSQL"
+      }
+    },
+    {
+      "path": "/SQL/post/sql.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.SQLInjectionController",
+        "method": "postSQL"
+      }
+    },
+    {
+      "path": "/SQL/cookie/sql.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.SQLInjectionController",
+        "method": "cookieSQL"
+      }
+    },
+    {
+      "path": "/SQL/header/sql.do",
+      "methods": ["POST"],
+      "parameters": {
+        "username": "header",
+        "param0": "header"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.SQLInjectionController",
+        "method": "headerSQL"
+      }
+    },
+    {
+      "path": "/SQL/xml/sql.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.SQLInjectionController",
+        "method": "xmlSQL"
+      }
+    },
+    {
+      "path": "/SQL/json/sql.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.SQLInjectionController",
+        "method": "jsonSQL"
+      }
+    },
+    {
+      "path": "/SQL/form/sql.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "MultipartFile"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.SQLInjectionController",
+        "method": "multipartSQL"
+      }
+    },
+    {
+      "path": "/SSRF/get/httpConnection.do",
+      "methods": ["GET"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.SSRFController",
+        "method": "getHttpConnection"
+      }
+    },
+    {
+      "path": "/SSRF/post/httpConnection.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.SSRFController",
+        "method": "postHttpConnection"
+      }
+    },
+    {
+      "path": "/SSRF/cookie/httpConnection.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.SSRFController",
+        "method": "cookieHttpConnection"
+      }
+    },
+    {
+      "path": "/SSRF/header/httpConnection.do",
+      "methods": ["POST"],
+      "parameters": {
+        "url": "header",
+        "param0": "header"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.SSRFController",
+        "method": "headerHttpConnection"
+      }
+    },
+    {
+      "path": "/SSRF/xml/httpConnection.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.SSRFController",
+        "method": "xmlHttpConnection"
+      }
+    },
+    {
+      "path": "/SSRF/json/httpConnection.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.SSRFController",
+        "method": "jsonHttpConnection"
+      }
+    },
+    {
+      "path": "/SSRF/form/httpConnection.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "MultipartFile"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.SSRFController",
+        "method": "multipartHttpConnection"
+      }
+    },
+    {
+      "path": "/SSRF/get/okHttp3.do",
+      "methods": ["GET"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.SSRFController",
+        "method": "getOkHttp3"
+      }
+    },
+    {
+      "path": "/SSRF/post/okHttp3.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.SSRFController",
+        "method": "postOkHttp3"
+      }
+    },
+    {
+      "path": "/SSRF/cookie/okHttp3.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.SSRFController",
+        "method": "cookieOkHttp3"
+      }
+    },
+    {
+      "path": "/SSRF/header/okHttp3.do",
+      "methods": ["POST"],
+      "parameters": {
+        "url": "header",
+        "param0": "header"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.SSRFController",
+        "method": "headerOkHttp3"
+      }
+    },
+    {
+      "path": "/SSRF/xml/okHttp3.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.SSRFController",
+        "method": "xmlOkHttp3"
+      }
+    },
+    {
+      "path": "/SSRF/json/okHttp3.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.SSRFController",
+        "method": "jsonOkHttp3"
+      }
+    },
+    {
+      "path": "/SSRF/form/okHttp3.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "MultipartFile"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.SSRFController",
+        "method": "multipartOkHttp3"
+      }
+    },
+    {
+      "path": "/SSRF/get/httpClient.do",
+      "methods": ["GET"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.SSRFController",
+        "method": "getHttpClient"
+      }
+    },
+    {
+      "path": "/SSRF/post/httpClient.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.SSRFController",
+        "method": "postHttpClient"
+      }
+    },
+    {
+      "path": "/SSRF/cookie/httpClient.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.SSRFController",
+        "method": "cookieHttpClient"
+      }
+    },
+    {
+      "path": "/SSRF/header/httpClient.do",
+      "methods": ["POST"],
+      "parameters": {
+        "url": "header",
+        "param0": "header"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.SSRFController",
+        "method": "headerHttpClient"
+      }
+    },
+    {
+      "path": "/SSRF/xml/httpClient.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.SSRFController",
+        "method": "xmlHttpClient"
+      }
+    },
+    {
+      "path": "/SSRF/json/httpClient.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.SSRFController",
+        "method": "jsonHttpClient"
+      }
+    },
+    {
+      "path": "/SSRF/form/httpClient.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "MultipartFile"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.SSRFController",
+        "method": "multipartHttpClient"
+      }
+    },
+    {
+      "path": "/Test/test.do",
+      "methods": ["GET"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.TestController",
+        "method": "test"
+      }
+    },
+    {
+      "path": "/Test/test.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.TestController",
+        "method": "testJson"
+      }
+    },
+    {
+      "path": "/Velocity/template.do",
+      "methods": ["GET"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.VelocityController",
+        "method": "velocity"
+      }
+    },
+    {
+      "path": "/Whitelist/url.do",
+      "methods": ["GET"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.WhitelistController",
+        "method": "url"
+      }
+    },
+    {
+      "path": "/XSS/get/xss.do",
+      "methods": ["GET"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.XSSController",
+        "method": "getXss"
+      }
+    },
+    {
+      "path": "/XSS/post/xss.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.XSSController",
+        "method": "postXss"
+      }
+    },
+    {
+      "path": "/XSS/cookie/xss.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.XSSController",
+        "method": "cookieXss"
+      }
+    },
+    {
+      "path": "/XSS/header/xss.do",
+      "methods": ["POST"],
+      "parameters": {
+        "str": "header",
+        "param0": "header"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.XSSController",
+        "method": "headerXss"
+      }
+    },
+    {
+      "path": "/XSS/xml/xss.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.XSSController",
+        "method": "xmlXss"
+      }
+    },
+    {
+      "path": "/XSS/json/xss.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.XSSController",
+        "method": "jsonXss"
+      }
+    },
+    {
+      "path": "/XSS/form/xss.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "MultipartFile"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.XSSController",
+        "method": "multipartXss"
+      }
+    },
+    {
+      "path": "/XStream/xStream.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.XStreamController",
+        "method": "xStream"
+      }
+    },
+    {
+      "path": "/XXE/get/xerces.do",
+      "methods": ["GET"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.XXEController",
+        "method": "getXerces"
+      }
+    },
+    {
+      "path": "/XXE/post/xerces.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.XXEController",
+        "method": "postXerces"
+      }
+    },
+    {
+      "path": "/XXE/cookie/xerces.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.XXEController",
+        "method": "cookieXerces"
+      }
+    },
+    {
+      "path": "/XXE/header/xerces.do",
+      "methods": ["POST"],
+      "parameters": {
+        "xml": "header",
+        "param0": "header"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.XXEController",
+        "method": "headerXerces"
+      }
+    },
+    {
+      "path": "/XXE/json/xerces.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.XXEController",
+        "method": "jsonXerces"
+      }
+    },
+    {
+      "path": "/XXE/form/xerces.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "MultipartFile"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.XXEController",
+        "method": "multipartXerces"
+      }
+    },
+    {
+      "path": "/XXE/get/dom4j.do",
+      "methods": ["GET"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.XXEController",
+        "method": "getDom4j"
+      }
+    },
+    {
+      "path": "/XXE/post/dom4j.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.XXEController",
+        "method": "postDom4j"
+      }
+    },
+    {
+      "path": "/XXE/cookie/dom4j.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "String"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.XXEController",
+        "method": "cookieDom4j"
+      }
+    },
+    {
+      "path": "/XXE/header/dom4j.do",
+      "methods": ["POST"],
+      "parameters": {
+        "xml": "header",
+        "param0": "header"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.XXEController",
+        "method": "headerDom4j"
+      }
+    },
+    {
+      "path": "/XXE/json/dom4j.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "body"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.XXEController",
+        "method": "jsonDom4j"
+      }
+    },
+    {
+      "path": "/XXE/form/dom4j.do",
+      "methods": ["POST"],
+      "parameters": {
+        "param0": "MultipartFile"
+      },
+      "source": {
+        "class": "org.javaweb.vuln.controller.XXEController",
+        "method": "multipartDom4j"
+      }
+    }
+  ]
+}
